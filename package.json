@@ -1,0 +1,38 @@
+{
+  "name": "weather_the_bot",
+  "version": "0.0.0",
+  "description": "I can give you the weather!",
+  "repository": {
+    "url": "bernardodsanderson/weather_the_bot",
+    "type": "git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "dev": "supervisor -x micro-bot index.js",
+    "start": "micro-bot",
+    "now-start": "micro-bot -d ${NOW_URL}",
+    "lint": "eslint .",
+    "test": "npm run lint"
+  },
+  "engines": {
+    "node": ">=8.5.0"
+  },
+  "author": "bernardodsanderson <bernardodsanderson@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "firebase-admin": "^5.12.1",
+    "micro-bot": "^2.2.2",
+    "telegraf-session-firebase": "0.0.1",
+    "telegraf-session-local": "^0.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^4.17.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "supervisor": "^0.12.0"
+  }
+}
